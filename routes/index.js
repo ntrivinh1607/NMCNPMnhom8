@@ -6,7 +6,7 @@ var router = express.Router();
 /* GET home page. */
 
 router.get('/', function(req, res, next) {
-  res.render('user/trang_chu', { layout: 'layout_user', mail: 1});
+  res.render('user/trang_chu', { layout: 'layout_user', mail: 0});
 });
 
 router.get('/gioi_thieu', function(req, res, next) {
@@ -37,7 +37,9 @@ router.get('/dang_nhap', function(req, res, next) {
   res.render('user/dang_nhap', { layout: false });
 });
 
-
+router.get('/gio_hang', function(req, res, next) {
+  res.render('user/gio_hang', { layout: 'layout_user'});
+});
 // router.post('/dang_ki', (req, res) => {
 //     layout_user = {
 //         password: SHA256(req.body.password).toString(),
