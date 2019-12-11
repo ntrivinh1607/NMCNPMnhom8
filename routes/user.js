@@ -10,39 +10,39 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/gioi_thieu', function(req, res, next) {
-  res.render('user/gioi_thieu', { layout: 'layout_user', kind_4: 1});
+  res.render('user/gioi_thieu');
 });
 
 router.get('/blog', function(req, res, next) {
-  res.render('user/blog', { layout: 'layout_user', kind_3: 1});
+  res.render('user/blog');
 });
 
 router.get('/lien_he', function(req, res, next) {
-  res.render('user/lien_he', { layout: 'layout_user', kind_5: 1});
+  res.render('user/lien_he');
 });
 
 router.get('/trang_chu', function(req, res, next) {
-  res.render('user/trang_chu', { layout: 'layout_user', kind_1: 1});
+  res.render('user/trang_chu');
 });
 
 router.get('/bat_dong_san', function(req, res, next) {
-  res.render('user/bat_dong_san', { layout: 'layout_user', kind_2: 1});
+  res.render('user/bat_dong_san');
 });
 
 router.get('/chi_tiet', function(req, res, next) {
-  res.render('user/chi_tiet', { layout: 'layout_user', kind_2: 1});
+  res.render('user/chi_tiet');
 });
 
 router.get('/dang_nhap', function(req, res, next) {
-  res.render('user/dang_nhap', { layout: false });
+  res.render('user/dang_nhap');
 });
 
 router.get('/chinh_sua', function(req, res, next) {
-  res.render('user/chinh_sua', { layout: false });
+  res.render('user/chinh_sua');
 });
 
 router.get('/gio_hang', function(req, res, next) {
-  res.render('user/gio_hang', { layout: 'layout_user', kind_6: 1});
+  res.render('user/gio_hang');
 });
 // router.post('/dang_ki', (req, res) => {
 //     layout_user = {
