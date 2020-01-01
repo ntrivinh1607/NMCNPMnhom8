@@ -13,6 +13,10 @@ router.get('/gioi_thieu', function(req, res, next) {
   res.render('user/gioi_thieu');
 });
 
+router.get('/tim_kiem', function(req, res, next) {
+  res.render('user/tim_kiem');
+});
+
 router.get('/blog', function(req, res, next) {
   res.render('user/blog');
 });

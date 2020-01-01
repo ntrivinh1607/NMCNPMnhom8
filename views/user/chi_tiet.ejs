@@ -1,4 +1,74 @@
 <%- include('header'); -%>
+
+<style type="text/css">
+  .detailBox {
+    width:320px;
+    border:1px solid #bbb;
+    margin:50px;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+/*.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}*/
+
+/*.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}*/
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    max-height:200px;
+    overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.img-circle {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.img-circle img {
+    width:100%;
+    border-radius:50%;
+}
+/*.commentText p {
+    margin:0;
+}*/
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+/*.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}*/
+</style>
+
 <div class="site-blocks-cover overlay" style="background-image: url(user/images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row align-items-center justify-content-center text-center">
@@ -114,32 +184,97 @@
         <div class="bg-white widget border rounded">
 
           <h3 class="h4 text-black widget-title mb-3">Liên hệ</h3>
+          <div>
+            <div>
+              <label for="name">Họ tên</label>
+              <span id="name" value="Nguyễn Văn A"></span>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <span id="email" value="abcxyz@gmail.com"></span>
+            </div>
+            <div>
+              <label for="phone">Điện thoại</label>
+              <span id="phone" value="012346789"></span>
+            </div>
+            <div>
+              <label for="phone">Địa chỉ</label>
+              <span id="phone" value="24/3 Nguyễn Văn Cừ, Quận 5, Sài Gòn, Việt Nam"></span>
+            </div>
+<!--             <div>
+              <button id="phone" class="btn btn-primary" value="Gửi"></button>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="bg-white widget border rounded">
+          <h3 class="h4 text-black widget-title mb-3">Báo cáo bài đăng</h3>
           <form action="" class="form-contact-agent">
             <div class="form-group">
-              <label for="name">Họ tên</label>
-              <input type="text" id="name" class="form-control">
+              <input type="checkbox">  Không liên lạc được
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" class="form-control">
+              <input type="checkbox">  Trùng với tin rao khác"
             </div>
             <div class="form-group">
-              <label for="phone">Điện thoại</label>
-              <input type="text" id="phone" class="form-control">
+              <input type="checkbox">  Tin không có thật"
+            </div>
+            <div class="form-group">
+              <input type="checkbox">  Bất động sản đã bán"
             </div>
             <div class="form-group">
               <input type="submit" id="phone" class="btn btn-primary" value="Gửi">
             </div>
           </form>
         </div>
-
         <div class="bg-white widget border rounded">
-          <h3 class="h4 text-black widget-title mb-3">Paragraph</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit qui explicabo, libero nam, saepe eligendi. Molestias maiores illum error rerum. Exercitationem ullam saepe, minus, reiciendis ducimus quis. Illo, quisquam, veritatis.</p>
+          <div class="titleBox">
+            <label>Bình luận</label>
+          </div>
+          <div class="actionBox">
+            <ul class="commentList">
+              <li>
+                <div class="img-circle">
+                  <img src="http://placekitten.com/50/50" />
+                </div>
+                <div class="commentText">
+                  <b>Nguyễn Văn B</b>
+                  <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+                </div>
+              </li>
+              <hr>
+              <li>
+                <div class="img-circle">
+                  <img src="http://placekitten.com/45/45" />
+                </div>
+                <div class="commentText">
+                  <b>Nguyễn Văn A</b>
+                  <p class="">Hello this is a test comment and this comment is particularly very long and it goes on and on and on.</p> <span class="date sub-text">on March 5th, 2014</span>
+                </div>
+              </li>
+              <hr>
+              <li>
+                <div class="img-circle">
+                  <img src="http://placekitten.com/40/40" />
+                </div>
+                <div class="commentText">
+                  <b>Nguyễn Văn B</b>
+                  <p class="">Hello this is a test comment.</p> <span class="date sub-text">on March 5th, 2014</span>
+                </div>
+              </li>
+              <hr>
+            </ul>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Nhập bình luận" />
+              </div>
+              <div class="form-group">
+                <button class="btn btn-default">Thêm</button>
+              </div>
+            </form>
+          </div>
         </div>
-
       </div>
-      
     </div>
   </div>
 </div>
@@ -261,4 +396,27 @@
 
     </div>
   </div>
-  <%- include('footer'); -%>
+</div>
+<%- include('footer'); -%>
+
+<!--         <div class="bg-white widget border rounded">
+
+          <h3 class="h4 text-black widget-title mb-3">Liên hệ</h3>
+          <form action="" class="form-contact-agent">
+            <div class="form-group">
+              <label for="name">Họ tên</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="phone">Điện thoại</label>
+              <input type="text" id="phone" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="submit" id="phone" class="btn btn-primary" value="Gửi">
+            </div>
+          </form>
+        </div> -->

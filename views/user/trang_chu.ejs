@@ -1,651 +1,890 @@
 <%- include('header'); -%>
-    <div class="slide-one-item home-slider owl-carousel">
+<style type="text/css">
+#imggg:hover {
+  opacity: 0.5;
+}
+</style>
+<div class="slide-one-item home-slider owl-carousel">
 
-      <div class="site-blocks-cover" style="background-image: url(user/images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+  <div class="site-blocks-cover" style="background-image: url(user/images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
 
-        <div class="text">
-          <h2>853 S Lucerne Blvd</h2>
-          <p class="location"><span class="property-icon icon-room"></span> Los Angeles, CA 90005</p>
-          <p class="mb-2"><strong>$2,250,500</strong></p>
-          
-          
-          <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">Chi tiết</a></p>
-          
-        </div>
-      </div>  
-
-      <div class="site-blocks-cover" style="background-image: url(user/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-
-        <div class="text">
-          <h2>625 S. Berendo St</h2>
-          <p class="location"><span class="property-icon icon-room"></span>607 Los Angeles, CA 90005</p>
-          <p class="mb-2"><strong>$2,250,500</strong></p>
-          
-          
-          <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">Chi tiết</a></p>
-          
-        </div>
-        
-      </div>  
-
+    <div class="text">
+      <h2>853 S Lucerne Blvd</h2>
+      <p class="location"><span class="property-icon icon-room"></span> Los Angeles, CA 90005</p>
+      <p class="mb-2"><strong>$2,250,500</strong></p>
+      
+      
+      <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">Chi tiết</a></p>
+      
     </div>
+  </div>  
 
-    <div class="py-5">
-      <div class="container">
-        <form class="row mb-5">
-          
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="select-wrap">
-              <span class="icon icon-arrow_drop_down"></span>
-              <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                <option value="">Diện tích khu nhà</option>
-                <option value="1000">1000</option>
-                <option value="800">800</option>
-                <option value="600">600</option>
-                <option value="400">400</option>
-                <option value="200">200</option>
-                <option value="100">100</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="select-wrap">
-              <span class="icon icon-arrow_drop_down"></span>
-              <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                <option value="">Tình trạng nhà</option>
-                <option value="Để bán">Để bán</option>
-                <option value="Để thuê">Để thuê</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="select-wrap">
-              <span class="icon icon-arrow_drop_down"></span>
-              <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                <option value="">Vị trí</option>
-                <option value="United States">United States</option>
-                <option value="United Kingdom">United Kingdom</option>
-                <option value="Canada">Canada</option>
-                <option value="Belgium">Belgium</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="select-wrap">
-              <span class="icon icon-arrow_drop_down"></span>
-              <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                <option value="">Diện tích</option>
-                <option value="1000">1000</option>
-                <option value="800">800</option>
-                <option value="600">600</option>
-                <option value="400">400</option>
-                <option value="200">200</option>
-                <option value="100">100</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="select-wrap">
-              <span class="icon icon-arrow_drop_down"></span>
-              <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                <option value="">Phòng ngủ</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5+">5+</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="select-wrap">
-              <span class="icon icon-arrow_drop_down"></span>
-              <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                <option value="">Phòng tắm</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5+">5+</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="mb-4">
-              <div id="slider-range" class="border-primary"></div>
-              <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white" disabled="" />
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <input type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Tìm kiếm">
-          </div>
-          
-        </form>
+  <div class="site-blocks-cover" style="background-image: url(user/images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
 
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-            <div class="feature d-flex align-items-start">
-              <span class="icon mr-3 flaticon-house"></span>
-              <div class="text">
-                <h2 class="mt-0">Biệt thự</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum neque.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-            <div class="feature d-flex align-items-start">
-              <span class="icon mr-3 flaticon-rent"></span>
-              <div class="text">
-                <h2 class="mt-0">Cho thuê hoặc Bán</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum neque.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
-            <div class="feature d-flex align-items-start">
-              <span class="icon mr-3 flaticon-location"></span>
-              <div class="text">
-                <h2 class="mt-0">Vị trí khu nhà</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum neque.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="text">
+      <h2>625 S. Berendo St</h2>
+      <p class="location"><span class="property-icon icon-room"></span>607 Los Angeles, CA 90005</p>
+      <p class="mb-2"><strong>$2,250,500</strong></p>
+      
+      
+      <p class="mb-0"><a href="#" class="text-uppercase small letter-spacing-1 font-weight-bold">Chi tiết</a></p>
+      
     </div>
-    <div class="site-section site-section-sm bg-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12">
-            <div class="site-section-title">
-              <h2>Bất động sản mới cập nhật</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="chi_tiet" class="prop-entry d-block">
-              <figure>
-                <img src="user/images/img_1.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="prop-text">
-                <div class="inner">
-                  <span class="price rounded">$1,930,000</span>
-                  <h3 class="title">853 S Lucerne Blvd</h3>
-                  <p class="location">Los Angeles, CA 90005</p>
-                </div>
-                <div class="prop-more-info">
-                  <div class="inner d-flex">
-                    <div class="col">
-                      <span>Diện tích:</span>
-                      <strong>240m<sup>2</sup></strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng ngủ:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng tắm:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Số kho:</span>
-                      <strong>1</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="chi_tiet" class="prop-entry d-block">
-              <figure>
-                <img src="user/images/img_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="prop-text">
-                <div class="inner">
-                  <span class="price rounded">$2,438,000</span>
-                  <h3 class="title">853 S Lucerne Blvd</h3>
-                  <p class="location">Los Angeles, CA 90005</p>
-                </div>
-                <div class="prop-more-info">
-                  <div class="inner d-flex">
-                    <div class="col">
-                      <span>Diện tích:</span>
-                      <strong>240m<sup>2</sup></strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng ngủ:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng tắm:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Số kho:</span>
-                      <strong>1</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="chi_tiet" class="prop-entry d-block">
-              <figure>
-                <img src="user/images/img_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="prop-text">
-                <div class="inner">
-                  <span class="price rounded">$5,320,000</span>
-                  <h3 class="title">853 S Lucerne Blvd</h3>
-                  <p class="location">Los Angeles, CA 90005</p>
-                </div>
-                <div class="prop-more-info">
-                  <div class="inner d-flex">
-                    <div class="col">
-                      <span>Diện tích:</span>
-                      <strong>240m<sup>2</sup></strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng ngủ:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng tắm:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Số kho:</span>
-                      <strong>1</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="chi_tiet" class="prop-entry d-block">
-              <figure>
-                <img src="user/images/img_4.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="prop-text">
-                <div class="inner">
-                  <span class="price rounded">$2,350,000</span>
-                  <h3 class="title">853 S Lucerne Blvd</h3>
-                  <p class="location">Los Angeles, CA 90005</p>
-                </div>
-                <div class="prop-more-info">
-                  <div class="inner d-flex">
-                    <div class="col">
-                      <span>Diện tích:</span>
-                      <strong>240m<sup>2</sup></strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng ngủ:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng tắm:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Số kho:</span>
-                      <strong>1</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="chi_tiet" class="prop-entry d-block">
-              <figure>
-                <img src="user/images/img_5.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="prop-text">
-                <div class="inner">
-                  <span class="price rounded">$1,550,000</span>
-                  <h3 class="title">853 S Lucerne Blvd</h3>
-                  <p class="location">Los Angeles, CA 90005</p>
-                </div>
-                <div class="prop-more-info">
-                  <div class="inner d-flex">
-                    <div class="col">
-                      <span>Diện tích:</span>
-                      <strong>240m<sup>2</sup></strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng ngủ:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng tắm:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Số kho:</span>
-                      <strong>1</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="chi_tiet" class="prop-entry d-block">
-              <figure>
-                <img src="user/images/img_6.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="prop-text">
-                <div class="inner">
-                  <span class="price rounded">$4,291,000</span>
-                  <h3 class="title">853 S Lucerne Blvd</h3>
-                  <p class="location">Los Angeles, CA 90005</p>
-                </div>
-                <div class="prop-more-info">
-                  <div class="inner d-flex">
-                    <div class="col">
-                      <span>Diện tích:</span>
-                      <strong>240m<sup>2</sup></strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng ngủ:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Phòng tắm:</span>
-                      <strong>2</strong>
-                    </div>
-                    <div class="col">
-                      <span>Số kho:</span>
-                      <strong>1</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="site-pagination">
-              <a href="#" class="active">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a href="#">5</a>
-              <span>...</span>
-              <a href="#">10</a>
-            </div>
-          </div>  
-        </div>
-        
-      </div>
-    </div>
-
-    <div class="site-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7 text-center mb-5">
-            <div class="site-section-title">
-              <h2>Các dịch vụ</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="service text-center border rounded">
-              <span class="icon flaticon-house"></span>
-              <h2 class="service-heading">Cải tiến công nghệ</h2>
-              <p><span class="read-more">Tìm hiểu thêm</span></p>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="service text-center border rounded">
-              <span class="icon flaticon-sold"></span>
-              <h2 class="service-heading">Nhà đã bán</h2>
-              <p><span class="read-more">Tìm hiểu thêm</span></p>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="service text-center border rounded">
-              <span class="icon flaticon-camera"></span>
-              <h2 class="service-heading">Tăng cường bảo mật</h2>
-              <p><span class="read-more">Tìm hiểu thêm</span></p>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="service text-center border rounded">
-              <span class="icon flaticon-house"></span>
-              <h2 class="service-heading">Cải tiến công nghệ</h2>
-              <p><span class="read-more">Tìm hiểu thêm</span></p>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="service text-center border rounded">
-              <span class="icon flaticon-sold"></span>
-              <h2 class="service-heading">Nhà đã bán</h2>
-              <p><span class="read-more">Tìm hiểu thêm</span></p>
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="service text-center border rounded">
-              <span class="icon flaticon-camera"></span>
-              <h2 class="service-heading">Tăng cường bảo mật</h2>
-              <p><span class="read-more">Tìm hiểu thêm</span></p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center">
-            <div class="site-section-title">
-              <h2>Blog của chúng tôi</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <a href="#"><img src="user/images/img_4.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Khi nào bán &amp; Giá Bán?</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <a href="#"><img src="user/images/img_2.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Khi nào bán &amp; Giá Bán?</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-            <a href="#"><img src="user/images/img_3.jpg" alt="Image" class="img-fluid"></a>
-            <div class="p-4 bg-white">
-              <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-              <h2 class="h5 text-black mb-3"><a href="#">Khi nào bán &amp; Giá Bán?</a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
     
-    <div class="site-section">
-    <div class="container">
-      <div class="row mb-5 justify-content-center">
-        <div class="col-md-7">
-          <div class="site-section-title text-center">
-            <h2>Người cộng tác</h2>
+  </div>  
+
+</div>
+
+<div class="py-5">
+  <div class="container">
+    <form class="row mb-5">
+      
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="select-wrap">
+          <span class="icon icon-arrow_drop_down"></span>
+          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+            <option value="">Diện tích khu nhà</option>
+            <option value="1000">1000</option>
+            <option value="800">800</option>
+            <option value="600">600</option>
+            <option value="400">400</option>
+            <option value="200">200</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="select-wrap">
+          <span class="icon icon-arrow_drop_down"></span>
+          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+            <option value="">Tình trạng nhà</option>
+            <option value="Để bán">Để bán</option>
+            <option value="Để thuê">Để thuê</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="select-wrap">
+          <span class="icon icon-arrow_drop_down"></span>
+          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+            <option value="">Vị trí</option>
+            <option value="United States">United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Canada">Canada</option>
+            <option value="Belgium">Belgium</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="select-wrap">
+          <span class="icon icon-arrow_drop_down"></span>
+          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+            <option value="">Diện tích</option>
+            <option value="1000">1000</option>
+            <option value="800">800</option>
+            <option value="600">600</option>
+            <option value="400">400</option>
+            <option value="200">200</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="select-wrap">
+          <span class="icon icon-arrow_drop_down"></span>
+          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+            <option value="">Phòng ngủ</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5+">5+</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="select-wrap">
+          <span class="icon icon-arrow_drop_down"></span>
+          <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
+            <option value="">Phòng tắm</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5+">5+</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="mb-4">
+          <div id="slider-range" class="border-primary"></div>
+          <input type="text" name="text" id="amount" class="form-control border-0 pl-0 bg-white" disabled="" />
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <input type="submit" class="btn btn-primary btn-block form-control-same-height rounded-0" value="Tìm kiếm">
+      </div>
+      
+    </form>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+        <div class="feature d-flex align-items-start">
+          <span class="icon mr-3 flaticon-house"></span>
+          <div class="text">
+            <h2 class="mt-0">Biệt thự</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum neque.</p>
           </div>
         </div>
       </div>
-      <div class="row block-13">
-
-        <div class="nonloop-block-13 owl-carousel">
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
+      <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+        <div class="feature d-flex align-items-start">
+          <span class="icon mr-3 flaticon-rent"></span>
+          <div class="text">
+            <h2 class="mt-0">Cho thuê hoặc Bán</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum neque.</p>
           </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide-item">
-            <div class="team-member text-center">
-              <img src="user/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
-              <div class="text p-3">
-                <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
-                <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
-                <p>
-                  <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
-                  <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
-                </p>
-              </div>
-            </div>
-          </div>
-
         </div>
-
+      </div>
+      <div class="col-md-6 col-lg-4 mb-3 mb-lg-0">
+        <div class="feature d-flex align-items-start">
+          <span class="icon mr-3 flaticon-location"></span>
+          <div class="text">
+            <h2 class="mt-0">Vị trí khu nhà</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem sint debitis porro quae dolorum neque.</p>
+          </div>
         </div>
       </div>
     </div>
-    <%- include('footer'); -%>
+  </div>
+</div>
+<div class="site-section site-section-sm bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="site-section-title">
+          <h2>Bất động sản bán</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_1.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$1,930,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_2.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$2,438,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_3.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$5,320,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_4.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$2,350,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_5.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$1,550,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_6.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$4,291,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="site-pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <span>...</span>
+          <a href="#">10</a>
+        </div>
+      </div>  
+    </div>
+    
+  </div>
+</div>
+
+<div class="site-section site-section-sm bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12">
+        <div class="site-section-title">
+          <h2>Bất động sản cho thuê</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_1.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$1,930,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_2.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$2,438,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_3.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$5,320,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_4.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$2,350,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_5.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$1,550,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="chi_tiet" class="prop-entry d-block">
+          <figure id = "imggg">
+            <img src="user/images/img_6.jpg" alt="Image" class="img-fluid">
+          </figure>
+          <div class="prop-text">
+            <div class="inner">
+              <span class="price rounded">$4,291,000</span>
+              <h3 class="title">853 S Lucerne Blvd</h3>
+              <p class="location">Los Angeles, CA 90005</p>
+            </div>
+            <div class="prop-more-info">
+              <div class="inner d-flex">
+                <div class="col">
+                  <span>Diện tích:</span>
+                  <strong>240m<sup>2</sup></strong>
+                </div>
+                <div class="col">
+                  <span>Phòng ngủ:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Phòng tắm:</span>
+                  <strong>2</strong>
+                </div>
+                <div class="col">
+                  <span>Số kho:</span>
+                  <strong>1</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="site-pagination">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <span>...</span>
+          <a href="#">10</a>
+        </div>
+      </div>  
+    </div>
+    
+  </div>
+</div>
+
+<div class="site-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 text-center mb-5">
+        <div class="site-section-title">
+          <h2>Các dịch vụ</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="#" class="service text-center border rounded">
+          <span class="icon flaticon-house"></span>
+          <h2 class="service-heading">Cải tiến công nghệ</h2>
+          <p><span class="read-more">Tìm hiểu thêm</span></p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="#" class="service text-center border rounded">
+          <span class="icon flaticon-sold"></span>
+          <h2 class="service-heading">Nhà đã bán</h2>
+          <p><span class="read-more">Tìm hiểu thêm</span></p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="#" class="service text-center border rounded">
+          <span class="icon flaticon-camera"></span>
+          <h2 class="service-heading">Tăng cường bảo mật</h2>
+          <p><span class="read-more">Tìm hiểu thêm</span></p>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="#" class="service text-center border rounded">
+          <span class="icon flaticon-house"></span>
+          <h2 class="service-heading">Cải tiến công nghệ</h2>
+          <p><span class="read-more">Tìm hiểu thêm</span></p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="#" class="service text-center border rounded">
+          <span class="icon flaticon-sold"></span>
+          <h2 class="service-heading">Nhà đã bán</h2>
+          <p><span class="read-more">Tìm hiểu thêm</span></p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-4">
+        <a href="#" class="service text-center border rounded">
+          <span class="icon flaticon-camera"></span>
+          <h2 class="service-heading">Tăng cường bảo mật</h2>
+          <p><span class="read-more">Tìm hiểu thêm</span></p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-section bg-light">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center">
+        <div class="site-section-title">
+          <h2>Blog của chúng tôi</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
+        <a href="#"><img src="user/images/img_4.jpg" alt="Image" class="img-fluid"></a>
+        <div class="p-4 bg-white">
+          <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
+          <h2 class="h5 text-black mb-3"><a href="#">Khi nào bán &amp; Giá Bán?</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
+        <a href="#"><img src="user/images/img_2.jpg" alt="Image" class="img-fluid"></a>
+        <div class="p-4 bg-white">
+          <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
+          <h2 class="h5 text-black mb-3"><a href="#">Khi nào bán &amp; Giá Bán?</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
+        <a href="#"><img src="user/images/img_3.jpg" alt="Image" class="img-fluid"></a>
+        <div class="p-4 bg-white">
+          <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
+          <h2 class="h5 text-black mb-3"><a href="#">Khi nào bán &amp; Giá Bán?</a></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div class="site-section">
+  <div class="container">
+    <div class="row mb-5 justify-content-center">
+      <div class="col-md-7">
+        <div class="site-section-title text-center">
+          <h2>Người cộng tác</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row block-13">
+
+      <div class="nonloop-block-13 owl-carousel">
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_1.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Megan Smith</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_2.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="team-member text-center">
+            <img src="user/images/person_3.jpg" alt="Image" class="img-fluid mb-4 w-50 rounded-circle mx-auto">
+            <div class="text p-3">
+              <h2 class="mb-2 font-weight-light text-black h4">Philip Martin</h2>
+              <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolorem totam non quis facere blanditiis praesentium est. </p>
+              <p>
+                <a href="#" class="text-black p-2"><span class="icon-facebook"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-twitter"></span></a>
+                <a href="#" class="text-black p-2"><span class="icon-linkedin"></span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<%- include('footer'); -%>
