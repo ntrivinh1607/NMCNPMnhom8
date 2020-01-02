@@ -9,6 +9,10 @@ router.get('/', function(req, res, next) {
   res.render('user/trang_chu', { layout: 'layout_user'});
 });
 
+router.get('/profile', function(req, res, next) {
+  res.render('user/profile');
+});
+
 router.get('/gioi_thieu', function(req, res, next) {
   res.render('user/gioi_thieu');
 });
