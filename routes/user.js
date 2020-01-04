@@ -52,6 +52,9 @@ router.get('/chinh_sua', function(req, res, next) {
 router.get('/gio_hang', function(req, res, next) {
   res.render('user/gio_hang');
 });
+router.get('/ket_qua', function(req, res, next) {
+  res.render('user/ket_qua_tim_kiem');
+});
 // router.post('/dang_ki', (req, res) => {
 //     layout_user = {
 //         password: SHA256(req.body.password).toString(),
