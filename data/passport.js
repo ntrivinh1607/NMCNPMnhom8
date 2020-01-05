@@ -1,6 +1,5 @@
 const LocalStrategy = require("passport-local").Strategy;
 const bcrypt = require('bcrypt-nodejs');
-
 const accountRepo = require('../models/accountRepo');
 
 module.exports = function(passport) {
@@ -35,10 +34,7 @@ module.exports = function(passport) {
 						name: req.param('name'),
 						tel: req.param('tel')
 					};
-					accountRepo.add(newUserMysql).then(rows => {
-						newUserMysql.id = rows.insertId;
-						return done(null, newUserMysql);
-					});
+					accountRepo.add(newUserMysql)
 				}
 			})
 			.catch(function(err){
@@ -60,6 +56,13 @@ module.exports = function(passport) {
 				}
 				if(!bcrypt.compareSync(password, rows[0].password))
 					return done(null, false, req.flash('loginMessage', 'Sai mật khẩu'));
+				req.session.user = rows[0];
+				if(rows[0].id == 1)
+				{
+					req.session.isSuperAdmin = true;
+				}
+				else
+					req.session.isSuperAdmin = false;
 				return done(null, rows[0]);
 			})
 			.catch(function(err){

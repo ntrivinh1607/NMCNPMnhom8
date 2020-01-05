@@ -45,21 +45,26 @@
 												<i class="ace-icon fa fa-coffee green"></i>
 												Xin nhập thông tin của bạn
 											</h4>
-
+											
 											<div class="space-6"></div>
-
-											<form>
+										<% if(message.length > 0) { %>
+											<div class="alert alert-danger"><%= message %></div>
+										<% } %>
+										<% if(messageSignUp.length > 0) { %>
+											<div class="alert alert-danger"><%= messageSignUp %></div>
+										<% } %>
+											<form action="/dang_nhap" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" />
+															<input type="text" class="form-control" name="UserName" placeholder="Username" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" />
+															<input type="password" class="form-control" name="PassWord" placeholder="Password" />
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
 													</label>
@@ -72,9 +77,9 @@
 															<span class="lbl"> Lưu thông tin</span>
 														</label>
 
-														<a href="trang_chu" role="button" class="width-35 pull-right btn btn-sm btn-primary">
+														<button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
 															<span class="bigger-110">Đăng nhập</span>
-														</a>
+														</button>
 													</div>
 
 													<div class="space-4"></div>
@@ -172,35 +177,44 @@
 											<div class="space-6"></div>
 											<p> Nhập thông tin chi tiết: </p>
 
-											<form>
+											<form action="/dang_ki/" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="email" class="form-control" placeholder="Email" />
+															<input type="email" class="form-control" name="Email" placeholder="Email" />
 															<i class="ace-icon fa fa-envelope"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="text" class="form-control" placeholder="Username" />
+															<input type="text" class="form-control" name="UserName" placeholder="Tên đăng nhập" />
 															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Password" />
+															<input type="password" class="form-control" name="PassWord" placeholder="Mật khẩu" />
 															<i class="ace-icon fa fa-lock"></i>
 														</span>
 													</label>
 
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">
-															<input type="password" class="form-control" placeholder="Repeat password" />
-															<i class="ace-icon fa fa-retweet"></i>
+															<input type="text" class="form-control" name="PhoneNumber" placeholder="Số điện thoại" />
+															<i class="ace-icon fa fa-user"></i>
 														</span>
 													</label>
+
+													<label class="block clearfix">
+														<span class="block input-icon input-icon-right">
+															<input type="text" class="form-control" name="FullName" placeholder="Tên đầy đủ" />
+															<i class="ace-icon fa fa-user"></i>
+														</span>
+													</label>
+
+
 
 													<label class="block">
 														<input type="checkbox" class="ace" />
@@ -218,7 +232,7 @@
 															<span class="bigger-110">Reset</span>
 														</button>
 
-														<button type="button" class="width-65 pull-right btn btn-sm btn-success">
+														<button type="submit" class="width-65 pull-right btn btn-sm btn-success">
 															<span class="bigger-110">Đăng kí</span>
 
 															<i class="ace-icon fa fa-arrow-right icon-on-right"></i>

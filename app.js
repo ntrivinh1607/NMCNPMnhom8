@@ -6,6 +6,7 @@ var logger = require('morgan');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var passport = require('passport');
+var passportUser = require('passport');
 var flash = require('connect-flash');
 
 var userRouter = require('./routes/user');
@@ -13,7 +14,7 @@ var adminRouter = require('./routes/admin');
 
 var app = express();
 require('./data/passport')(passport)
-
+require('./data/passportUser')(passportUser)
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -25,6 +26,8 @@ app.use(session({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
+app.use(passportUser.initialize());
+app.use(passportUser.session());
 app.use(flash());
 
 app.use(logger('dev'));
@@ -33,7 +36,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', userRouter);
+userRouter(app, passport);
 adminRouter(app, passport);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
